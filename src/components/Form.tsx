@@ -20,10 +20,26 @@ export default function Form() {
       </div>
 
       <div className="grid grid-cols-1 gap-3">
-        <label htmlFor="category" className="font-bold">
+        <label htmlFor="activity" className="font-bold">
           Actividad:
         </label>
-        <input />
+        <input
+          id="activity"
+          type="text"
+          className="border border-slate-300 p-2 rounded-lg"
+          placeholder="Ej. Comida, jugo de naranja, pesas, bicicleta"
+        />
+      </div>
+      <div className="grid grid-cols-1 gap-3">
+        <label htmlFor="calories" className="font-bold">
+          Calorías:
+        </label>
+        <input
+          id="calories"
+          type="number"
+          className="border border-slate-300 p-2 rounded-lg"
+          placeholder="Ej. 100, 250, 500"
+        />
       </div>
     </form>
   );
