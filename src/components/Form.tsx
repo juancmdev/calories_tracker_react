@@ -41,6 +41,11 @@ export default function Form() {
           placeholder="Ej. 100, 250, 500"
         />
       </div>
+      <input
+        type="submit"
+        className="bg-gray-800 hover:bg-gray-900 w-full p-2 font-bold uppercase text-white cursor-pointer rounded-lg"
+        value="Guardar comida o ejercicio"
+      />
     </form>
   );
 }
