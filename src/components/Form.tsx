@@ -8,8 +8,11 @@ export default function Form() {
     calories: 0,
   });
 
-  const handleChange = () => {
-    console.log("Change detected");
+  const handleChange = (e) => {
+    setActivity({
+      ...activity, //para no perder el state anterior
+      [e.target.id]: e.target.value,
+    });
   };
 
   return (
