@@ -2,7 +2,7 @@ import type { Activity } from "../types";
 
 export type ActivityActions = {
   type: "save-activity";
-  payloado: { newActivity: Activity };
+  payload: { newActivity: Activity };
 };
 
 type ActivityState = {
