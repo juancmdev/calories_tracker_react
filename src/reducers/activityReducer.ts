@@ -20,6 +20,10 @@ export const activityReducer = (
   if (action.type === "save-activity") {
     //Este código maneja la logica para actualizar el estado
     //con una nueva actividad.
-    console.log("Deste save activity reducer");
+    console.log(action.payload.newActivity);
   }
+  return {
+    ...state, //retorna el estado anterior
+    activities: [...state.activities, action.payload.newActivity], //agrega la nueva actividad al estado
+  };
 };
